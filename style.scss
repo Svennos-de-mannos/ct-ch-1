@@ -1,0 +1,172 @@
+$color-1: #197f43;
+$color-2: #002216;
+$color-3: #d8d9da;
+
+@keyframes zoom {
+  0%   {zoom: 0;}
+  50%  {zoom: 0.6;}
+  100% {zoom: 0;}
+}
+
+@font-face {
+    font-family: "Pirata";
+    src: url("typo/Pirata.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Pirata";
+}
+
+.navbar{
+    padding: 20px calc(50vw - 625px);
+    display: flex;
+    flex-basis: calc(25% - (0.25rem * 2));
+    background: $color-3;
+    height: 80px;
+    .logo{
+        img{
+            height: 80px;
+            transition: 0.3s;
+            &:hover{
+                transition: 0.3s;
+                transform: rotate(360deg);
+            }
+        }
+    }
+    ul{
+        margin: 0;
+        vertical-align: middle;
+        li {
+            display:inline-block;
+            vertical-align: middle;
+            padding: 0px 30px;
+            a {
+                transition: 0.3s;
+                font-family: Pirata;
+                text-decoration: none;
+                font-size: 25px;
+                color: $color-1;
+                &:hover{
+                    transition: 0.3s;
+                    color: $color-2;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+.frontpage{
+    width: 100vw;
+    height: calc(100vh - 125px);
+    background-image: url("imgs/slider-img.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    -webkit-box-shadow: inset 0px 200px 300px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 200px 300px -7px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 200px 300px -7px rgba(0,0,0,0.75);
+    border-top: solid $color-1 5px;
+    h1 {
+        font-size: 80px;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+        font-family: Pirata;
+        letter-spacing: 1;
+        animation-name: zoom;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    .flex-container{
+        display: block;
+        width: 50%;
+        padding: 35px;
+        h2{
+            font-family: Pirata;
+        }
+    }
+    .flex-alt{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/// BLOCKS!!! YEY!!!
+.block-1{
+    background-color: $color-1;
+    color: $color-3;
+    h1, h2{
+        color: white;
+    }
+}
+
+.block-2{
+    background-color: $color-2;
+    color: $color-3;
+    h1, h2{
+        color: white;
+    }
+}
+
+.block-3{
+    background-color: $color-3;
+    color: $color-2;
+    h1, h2{
+        color: $color-1;
+    }
+}
+
+/// BUTTOOOOONNNNSSS
+button {
+    padding: 10px;
+    color: white;
+    background-color: #002216;
+    transition: 0.3s;
+    border: none;
+    width: 80px;
+    border-radius: 5px;
+    &:hover{
+        transition: 0.3s;
+        background: #01462e;
+    }
+}
+
+.centered{
+    text-align: center;
+}
+
+.img-link{
+    transition: 0.3s;
+    border-radius: 10px;
+    img{
+    border-radius: 10px;
+    }
+    &:hover{
+        transition: 0.3s;
+        -webkit-box-shadow: 0px 20px 0px -1px $color-3; 
+        box-shadow: 0px 20px 0px -1px $color-3;
+    }
+}
+
+.bg-block{
+    background-image: url("imgs/eye.png");
+    background-blend-mode: multiply;
+    background-size: 800px;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+

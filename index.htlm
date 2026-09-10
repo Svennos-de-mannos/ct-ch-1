@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width">
+   <title>Fansite</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+   
+</head>
+<body>
+    <div class="main">
+
+    <!-- NAVIGAtION HEADER casue yk, its standard shit -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="imgs/logo.png" height="80px">
+        </div>
+            <ul>
+                <li>
+                    <h2><a href="#nav1">Home</a></h2>
+                </li>
+                <li>
+                    <h2><a href="https://rustyquill.com/">Official Website</a></h2>
+                </li>
+            </ul>
+    </nav>
+
+    <!-- FRONTPAGE SLIDERRRRRR -->
+        <div class="frontpage">
+            <h1>The Magnus Archives</h1>
+        </div>
+
+    <!-- 2 TEXTBLOX -->
+        <div class="flexbox" id="nav1">
+            <div class="flex-container block-2">
+                <h2>What Is the Magnus Archives</h2>
+                <p>The Magnus Archives is a weekly horror fiction podcast examining what lurks in the archives of the Magnus Institute, an organisation dedicated to researching the esoteric and the weird. Join the new head archivist Jonathan Sims every Thursday as he explores the much-neglected collection of statements and investigations, digitising them and converting them to audio along with supplementary investigations by his team. </p>
+            </div>
+            <div class="flex-container block-3">
+                <h2>Why Listen</h2>
+                <p>Come listen to our weekly horror fiction podcast examining what lurks in the archives of the Magnus Institute, an organisation dedicated to researching the esoteric and the weird. Join Jonathan Sims as he explores the archive, but be be warned, as he looks into its depths something starts to look back... </p>
+                <p>New episodes every Thursday produced by Rusty Quill, featuring guest actors, short stories, serial plots and more.<p>
+            </div>
+        </div>
+
+<!-- CHARACTER TITLE BLOCK -->
+<div class="flexbox">
+        <div class="flex-container flex-alt block-1 bg-block">
+                <h1>Main character In the Archives</h1>
+        </div>
+</div>
+
+<!-- 2 TEXTBLOX -->
+        <div class="flexbox">
+            <div class="flex-container block-3">
+            <br><br><br><br>
+                <h2>Jonathan Sims</h2>
+                <p>Jonathan Sims is the Head Archivist of the Magnus Institute, London. He takes over the position after Gertrude Robinson, his predecessor, passes away in the line of duty. </p>
+                <p>Gertrude has left the Archives in a state of chaos and John is faced with the monumental task of organising and recording several decades worth of statements about encounters with the paranormal. </p>
+            </div>
+            <div class="flex-container block-2 centered">
+                <a class="img-link" href="https://the-magnus-archives.fandom.com/wiki/Jonathan_Sims"><img src="imgs/images.jpg" alt="Jonathan Sims" width="300px"></a>
+            </div>
+        </div>
+
+
+<!-- JAVASCRIPT TEXTBLOCK -->
+        <div class="flexbox" id="javablock">
+            <div class="flex-container flex-alt block-1 bg-block-alt">
+                <h2>Current Episode</h2>
+                <button onclick="counterDown()">previous</button> <button onclick="counterUp()">next</button>
+                <h3>Episode <div id="ep-count">1</div></h3>
+                <p id="discribe">Statement of Nathan Watts, regarding an encounter on Old Fishmarket Close, Edinburgh.</p>
+                <br>
+                <iframe id="Episoder" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/2SpWBV4kAhVNoLxANQhROO?utm_source=generator&si=c1ebda0e172f45d2" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
